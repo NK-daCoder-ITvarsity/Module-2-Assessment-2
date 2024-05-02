@@ -1,0 +1,114 @@
+
+.main {
+    margin: 6em auto;
+    padding-bottom: 5em;
+}
+
+.main__first-section-specials {
+    padding: 1em;
+}
+
+@media (min-width: 900px) {
+    .main {
+        width: 80%;
+        margin: 7em 12em;
+        padding: 0;
+    }
+}
+
+.first-section__unordered-list {
+    height: 190px;
+    display: flex;
+    gap: 3em;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+@media (min-width: 900px) {
+    .main__first-section-specials {
+        overflow: auto;
+    }
+
+    .first-section__unordered-list {
+        margin-top: 4.5em;
+        height: 500px;
+        overflow: auto;
+    }
+}
+
+
+.first-section__unordered-list > li,
+.first-section__unordered-list > li a {
+    display: flex;
+    flex: 0 0 auto;
+    width: 100%;
+}
+
+.first-section__image {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.mall-catalogue {
+    width: 85%;
+    margin: 0 auto;
+}
+
+@media (min-width: 900px) {
+    .mall-catalogue {
+        width: 90%;
+    }
+}
+
+
+.mall-catalogue__heading {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: center;
+}
+
+/* ============================================ mall catalogue ===================================================== */
+
+.mall-catalogue__heading-image {
+    width: 25px;
+    height: 25px;
+}
+
+.mall-catalogue__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
+}
+
+
+
+.mall-catalogue-list__item {
+    padding: 1em;
+}
+
+@media (min-width: 900px) {
+    .mall-catalogue__heading-image {
+        width: 100px;
+        height: 100px;
+    }
+
+    .mall-catalogue__heading {
+        font-size: 5rem;
+    }
+
+    .desktop-scale {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+.mall-catalogue-list-item--glassmorphisum {
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+
+    box-shadow: inset 1px 1px 3px 0 hsla(0, 0%, 100%, 0.904), inset -1px -1px 1px 0 hsl(0, 0%, 17%);
+    border-radius: 15%;
+}
+
+

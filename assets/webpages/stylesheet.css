@@ -1,0 +1,245 @@
+:root {
+    --border-radius-divider-decorator: 50%;
+    --margin-spacing-top-sections: 2em;
+    --section-decorator-border-radius: 20px;
+    --indented-section-heading: inset 1px 1px 10px 5px hsla(0, 0%, 0%, 0.767), inset -1px -1px 2px 0 hsla(0, 0%, 100%, 0.479);
+    --section-shadows: 2px 2px 7px 2px black, -2px -2px 4px 0 hsla(0, 0%, 100%, 0.253);
+    --section-padding: 1em;
+}
+
+.main {
+    width: 80%;
+    margin: 6em auto;
+}
+
+@media (min-width: 900px) and (max-width: 936px) {
+    .main  {
+        margin: 6em 8em;
+        width: 80%;
+    }
+}
+
+@media (min-width: 936px) {
+    .main  {
+        margin: 6em 8.5em;
+        width: 80%;
+    }
+}
+
+@media (min-width: 1000px) {
+    .main  {
+        margin: 6em 12.2em;
+        width: 80%;
+    }
+}
+
+/* ======================================== First Section ===================================================== */
+.spur-hero-section {
+    display: flex;
+ 
+    justify-content: center;
+    align-items: center;
+}
+
+.divider-decorator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1.5em;
+    border-radius: var(--border-radius-divider-decorator);
+    box-shadow: inset 1px 1px 7px 3px black, inset -1px -1px 1px 0 hsla(0, 0%, 100%, 0.295);
+}
+
+.divider-decorator__image {
+    width: 100%;
+    height: 150px;
+    padding: 1em;
+}
+
+@media (min-width: 900px) {
+    .divider-decorator {
+        width: 100%;
+        border-radius: var(--section-decorator-border-radius);
+        box-shadow: inset 1px 1px 7px 4px black, inset -1px -1px 2px 1px hsla(0, 0%, 100%, 0.295);
+    }
+
+    .divider-decorator__image {
+        width: 50%;
+        height:  250px;
+        padding: 2em;
+        filter: drop-shadow(1px 1px 8px hsl(0, 100%, 50%));
+    }
+}
+
+/* ===================================== About Spur Section =============================================== */
+
+.about-spur-section {
+    margin-top: var(--margin-spacing-top-sections);
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2em;
+    padding: var(--section-padding);
+    border-radius: var(--section-decorator-border-radius);
+
+    box-shadow: var(--section-shadows);
+}
+
+@media (min-width: 900px) {
+    .about-spur-section {
+        padding: 2em;
+    }
+}
+
+.about-spur__heading {
+    padding: .2em;
+    font-size: 2rem;
+
+    border-radius: var(--section-decorator-border-radius);
+    box-shadow: var(--indented-section-heading);
+}
+
+@media (max-width: 900px) {
+    .about-spur__paragraph {
+       display: grid;
+       order: 2;
+    }
+
+    .about-spur__image {
+        display: grid;
+        order: 1;
+    }
+
+    .social-proof {
+        display: grid;
+        order: 3;
+        justify-self: center;
+    }
+}
+
+@media (min-width: 900px) {
+    .about-spur-section {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1em;
+    }
+
+    .about-spur__heading {
+        grid-column: span 2;
+    }
+
+    .about-spur__heading {
+        padding-top: 2em;
+        padding-bottom: 2em;
+        font-size: 2rem;
+    }
+
+    .about-spur__paragraph {
+        padding-top: 6em;
+        width: 350px;
+    }
+}
+
+.about-spur__image {
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 5px 2px hsla(0, 0%, 100%, 0.644);
+}
+
+@media (min-width: 900px) {
+    .about-spur__image {
+        width: 100%;
+        border-radius: 20px;
+        box-shadow: 1px 1px 10px 2px hsl(0, 0%, 0%);
+    }
+}
+
+.about-spur__paragraph {
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+/* ====================================== Image Gallery ============================================= */
+.image-gallery-section {
+    margin-top: var(--margin-spacing-top-sections);
+    box-shadow: var(--section-shadows);
+    border-radius: var(--section-decorator-border-radius);
+    padding: var(--section-padding);
+}
+
+.image-gallery-section__heading {
+    box-shadow: var(--indented-section-heading);
+    border-radius: var(--section-decorator-border-radius);
+    padding: .2em;
+    font-size: 2rem;
+}
+
+@media (min-width: 900px) {
+    .image-gallery-section__heading {
+        box-shadow: var(--indented-section-heading);
+        border-radius: var(--section-decorator-border-radius);
+        padding: 2em;
+    }
+}
+
+.spur__image-gallery {
+    margin-top: 2em;
+    padding: 1em;
+    box-shadow: var(--indented-section-heading);
+    display: flex;
+    gap: 9.5px;
+
+    overflow-x: auto;
+}
+
+.image-gallery__image {
+    width: 325px;
+    height: 100%;
+    border-radius: 9px;
+}
+
+.social-proof__unordered-list {
+    display: flex;
+    gap: 2em;
+}
+
+.social-proof__icon:hover {
+    transition-property: filter;
+    transition-duration: .5s;
+    transition-timing-function: ease;
+}
+
+/* ========================================== Opening Hours ================================================= */
+
+.opening-hours {
+    margin-top: var(--margin-spacing-top-sections);
+    box-shadow: var(--section-shadows);
+    padding: var(--section-padding);
+    border-radius: var(--section-decorator-border-radius);
+}
+
+.opening-hours__heading {
+    box-shadow: var(--indented-section-heading);
+    border-radius: var(--section-decorator-border-radius);
+    padding: 2em;
+    font-size: 2rem;
+}
+
+.opening-hours__unordered-list {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+    width: 80%;
+    margin: 2em auto;
+}
+
+/* ================================================= Footer ===================================================== */
+.footer {
+    background-color: black;
+    padding: 2em;
+}
+
+.where-to-find__section {
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 10em;
+}

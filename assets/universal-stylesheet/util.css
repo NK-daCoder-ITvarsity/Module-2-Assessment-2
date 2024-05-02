@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+:root {
+    --glassmorphisum-backdrop-color: hsla(0, 0%, 100%, 0.082);
+    --glassmorphisum-backdrop-linear-gradient: linear-gradient(hsla(0, 0%, 43%, 0.322), hsla(0, 0%, 100%, 0.144));
+    --glassmorphisum-border-radius: 40px;
+    --glasmorphisium-box-shadow-botom-right: 1px 2px 2px hsla(0, 0%, 100%, 0.486);
+    --glasmorphisium-box-shadow-top-left: -1px -1px 2px hsla(0, 0%, 52%, 0.493);
+
+    --neumorphisium-box-shadow-bottom-right: -6px -6px 7px #ffffff;
+    --neumorphisium-box-shadow-top-left: 6px 6px 7px #5858587e;
+
+    --main-background-color: linear-gradient(hsla(0, 0%, 12%, 0.904), hsla(0, 0%, 7%, 0.966));
+
+    --border-radius: 10px;
+}
+
+body {
+    /* background: var(--main-background-color); */
+    background-color: rgb(20, 20, 20);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* ========================================== TEXT =========================================================== */
+.text-color--white {
+    color: white;
+}
+
+.text-color--black {
+    color: hsla(0, 0%, 0%, 0.911);
+}
+
+.text-align--center {
+    text-align: center;
+}
+
+.text-align--left {
+    text-align: left;
+}
+
+.text-align--left {
+    text-align: right;
+}
+
+/* ========================================== FONT SIZE ======================================================= */
+
+.font--big-title-size {
+    font-size: clamp(4rem, calc(4rem + ((1vw - 0.32rem) * 6.25)), 17rem);
+}
+
+.font--medium-title-size {
+    font-size: clamp(1rem, calc(1rem + ((1vw - 0.32rem) * 0.9615)), 3rem);
+}
+
+.font--small-title-size {
+    font-size: clamp(0.6rem, calc(0.6rem + ((1vw - 0.32rem) * 0.6731)), 2rem);
+}
+
+/* ========================================= Grids ======================================================= */
+
+/* ================== Two Column Grid ============================= */
+
+.two-one--column-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+@media (max-width: 550px) {
+    .two-one--column-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* ================ Automatic-Column-Grid =========================== */
+
+.four-one-auto-column--grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));
+}
+
+.three-one-auto-column--grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+/* ========================================= Flex-box ======================================================= */
+
+.flex--row {
+    display: flex;
+}
+
+.flex--row-center-x-y {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex--column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex--column-center-x-y {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex--column-center-x {
+    display: flex;
+    align-items: center;
+}
+
+.flex--column-center-y {
+    display: flex;
+    justify-content: center;
+}
+
+/* ========================================= margin-uttiles ======================================================= */
+
+.centered-margin {
+    width: 80vw;
+    margin: 4em auto;
+    padding: 9em;
+}
+
+/* ========================================= glassmorphisums-uttiles ======================================================= */
+
+.glassmorphisum {
+    backdrop-filter: blur(5px);
+
+    border-radius: var(--glassmorphisum-border-radius);
+    padding: 2em;
+
+    /* ------ you can create multiple box sahdows through comma seperation ------ */
+    box-shadow: var(--glasmorphisium-box-shadow-top-left), var(--glasmorphisium-box-shadow-botom-right);
+    margin: 4em;
+}
+
+/* ========================================= skeumorphisums-uttiles ======================================================= */
+
+.three-dimensional--morphisums {
+    background: var(--main-background-color);
+    box-shadow:  var(--neumorphisium-box-shadow-top-left), var(--neumorphisium-box-shadow-bottom-right);
+}
+
+.three-dimensional--inner-morphisums {
+    background: var(--main-background-color);
+
+    box-shadow: inset 12px 12px 24px #939393,
+                inset -12px -12px 24px #ffffff;
+}
+
+.squemorphic-button {
+    margin: 4em 5em;
+    font-size: 2em;
+    padding: 1em 4em;
+    border-radius: 15px;
+
+    text-shadow: 0 1px #9b9b9b;
+    border: 1px solid #8F9092;
+    background-image: linear-gradient(to top, #D8D9DB 0%, #fff 80%, #FDFDFD 100%);
+
+    box-shadow: 0 3px 10px 1px hsl(0, 0%, 23%);
+
+    transition-property: background-image, box-shadow;
+    transition-duration: 25ms;
+    transition-timing-function: ease;
+}
+
+.squemorphic-button:hover {
+    text-shadow: 0 1px #ffffff;
+    background-image: linear-gradient(to top, #d1d1d1 0%, #ffffff 50%, #d3d3d3 100%);
+
+    /* ----- horizontal, vertical, blur, spread-radius, color  ------ */
+    box-shadow: 0 4px 10px 9px hsl(0, 0%, 99%), 
+                0 -4px 10px 9px hsl(0, 0%, 18%);
+               
+}
+
+
+.second-squemorphisum--button {
+    margin: 4em 5em;
+    font-size: 2em;
+    padding: 1em 4em;
+    border-radius: 15px;
+
+    text-shadow: 0 1px #9b9b9b;
+
+    /* ----------- squemorphic effect -------------- */
+    box-shadow: inset 0 1px 0 hsl(0, 0%, 100%), inset 0 -4px 0 hsl(22, 100%, 35%);
+}
+
+/* ========================================= responsive-image ======================================================= */
+
+.image--is-repsonsive {
+    width: 100%;
+    height: auto;
+}
+
+/* ========================================= Button-color ======================================================= */
+.button-color--orange {
+    border: 3px solid hsl(29, 100%, 50%);
+    background: linear-gradient(to top, rgb(255, 102, 0), hsl(29, 100%, 59%) ,hsl(19, 100%, 42%));
+    color: white;
+}
+
+/* ========================================= unordered-list ======================================================= */
+
+.unordered-list--bullet-remover > li {
+    list-style-type: none;
+}
+
+.unorderlist_list_anchor--underline-removed > li a {
+    text-decoration: none;
+}
+
+/* ====================================== border-radius ================================================= */
+
+.twenty-px-border-top-right-left-radius {
+    border-top-right-radius: var(--border-radius);
+    border-top-left-radius: var(--border-radius);
+}
+
+@media (min-width: 900px) {
+    .twenty-px-border-top-right-left-radius {
+        border-top-right-radius: 1em;
+        border-bottom-right-radius: 1em;
+        border-top-left-radius: 0;
+        
+    }
+}
+
+/* =================================================== links ======================================================= */
+
+.link, .section-top__button {
+    background: var(--main-background-color);
+}
+
+/* ================================================== Extra Utils =============================================== */
+.navigation {
+    background-image: var(--main-background-color);
+    box-shadow: 1px 1px 5px 5px black;
+}
+
+.second-navigation {
+    background-image: var(--main-background-color);
+    box-shadow: 1px 1px 5px 5px black;
+}
+
+@media (min-width: 900px) {
+    .navigation {
+        background-image: var(--main-background-color);
+    }
+}
+
+/* ======================== Padding bottom section space for navigation menu ================================ */
+
+.section-padding--bottom {
+    padding-bottom: 2em;
+}

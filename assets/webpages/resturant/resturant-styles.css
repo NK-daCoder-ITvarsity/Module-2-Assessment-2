@@ -1,0 +1,129 @@
+:root {
+    --border-image-radius: 50%;
+    --card-border-radius: 20px;
+    --gap: .4em;
+}
+
+.main-resturant {
+    margin: 6em auto;
+    padding-bottom: 5em;
+}
+
+@media (min-width: 900px) {
+    .main-resturant {
+        width: 80%;
+        margin: 6em 12.5em;
+    }
+
+    .font-size {
+        font-size: 5rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .font-size {
+        font-size: 2rem;
+    }
+}
+
+.resturant-image {
+    box-shadow: inset 3px 3px 10px 1px black, inset 0 0 10px 1px hsla(0, 0%, 100%, 0.137);
+    width: 150px;
+    height: 150px;
+    border-radius: var(--border-image-radius);
+}
+
+.main-resturant__first-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gap);
+}
+
+
+
+@media (min-width: 900px) {
+    .resturant-image {
+        width: 450px;
+        height: 450px;
+    }
+
+    .main-resturant__first-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.divider-decorator--1 {
+    border-radius: var(--border-image-radius);
+    padding: 1em;
+    box-shadow: inset 3px 3px 10px 3px black, inset 0 0 10px 1px hsla(0, 0%, 100%, 0.137);
+}
+
+.divider-decorator--2 {
+    border-radius: var(--border-image-radius);
+    box-shadow: 2px 2px 1px 1px hsla(0, 0%, 0%, 0.829), 0 0 5px 1px hsla(0, 0%, 100%, 0.137);
+    padding: .5em;
+}
+
+@media (min-width: 904px) and (max-width: 1118px){
+    .font-size {
+        font-size: 3rem;
+    }
+
+    .resturant-image {
+        width: 195px;
+        height: 195px;
+    }
+}
+
+/* ============================================ Catalogue ======================================================== */
+
+.resturants-catalogue {
+    margin-top: 2em;
+}
+
+.resturant-catalogue-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+    
+    width: 80%;
+    margin: 0 auto;
+}
+
+.resturant-catalogue-list__item {
+    background-color: hsl(0, 0%, 5%);
+    padding: 1em;
+    height: 200px;
+
+    border-radius: var(--card-border-radius);
+
+    box-shadow: -2px -2px 5px 0 hsla(0, 0%, 46%, 0.24), 1px 1px 2px 2px black;
+}
+
+@media (min-width: 900px) {
+    .resturant-catalogue-list__item {
+        padding: 2em;
+        height: 500px;
+    }
+}
+
+.resturant-catalogue-list-item--inherit-width-height {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+}
+
+.resturant-catalogue-list__item:active {
+    box-shadow: inset -2px -2px 5px 0 hsla(0, 0%, 46%, 0.24), inset 1px 1px 5px 5px black;
+}
+
+
+

@@ -1,0 +1,33 @@
+:root {
+    --navigation-width: 100px;
+    --navigation-height: 100%;
+}
+
+/* =================================== Navigation ================================================================== */
+@media (min-width: 900px) {
+    .header--fixed-position {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: var(--navigation-width);
+        height: var(--navigation-height);   
+    }
+
+    .navigation, .navigation > ul {
+        height: var(--navigation-height);
+    }
+
+    .navigation > ul {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .second-navigation {
+        position: fixed;
+        top: 0;
+        left: 14.5vw;
+        width: 80vw;
+    }
+
+}
