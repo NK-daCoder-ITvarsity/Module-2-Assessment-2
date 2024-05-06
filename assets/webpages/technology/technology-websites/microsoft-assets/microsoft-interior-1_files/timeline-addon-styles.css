@@ -1,0 +1,89 @@
+.cd-timeline-content h2.cd-timeline-item-title {
+	font-weight: 600;
+	padding: 0;
+}
+
+.cd-timeline-content .timeline-express-read-more-link {
+	margin-top: 5px;
+}
+
+.single-te_announcements .m-content-placement-item {
+	margin-top: 10px;
+}
+
+.single-features.has-timeline [data-grid~=col-8],
+.single-te_announcements [data-grid~=col-8] {
+	width: 100%;
+}
+
+@media (min-width: 1085px) {
+	.single-features.has-timeline [data-grid~=col-8],
+	.single-te_announcements [data-grid~=col-8] {
+		width: 66.67%;
+	}
+}
+
+.single-features.has-timeline section[role="complementary"] {
+	display: none;
+}
+
+.single-features.has-timeline .f-content-section[data-grid~=container] {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.timeline-page-headline,
+.timeline-page-subhead {
+	text-align: center;
+}
+
+.page-template-timeline .entry-header,
+.page-template-timeline .entry-content > *:not(.timeline-express) {
+	text-align: center;
+}
+
+.timeline-full-contain {
+	float: none;
+	margin: 0 auto;
+}
+
+/* Hiding timeline until everything is rendered properly */
+.timeline-express {
+	opacity: 0 !important;
+	transition: opacity 0.7s;
+}
+
+.timeline-express.full-rendered {
+	opacity: 1 !important;
+}
+
+.page-template-timeline .timeline-full-contain {
+    float: none;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 900px;
+}
+
+@media only screen and (min-width:821px) {
+    .page-template-timeline .cd-timeline-block {
+        margin: 1em 0 1em 1px;
+        width: 49.8%;
+    }
+}
+
+.single-te_announcements .tribe-timeline-return {
+	display: inline-block;
+	color: #000;
+	font-size: 16px;
+	text-decoration: none;
+	margin: 30px 0 0;
+}
+
+.single-te_announcements .tribe-timeline-return:before {
+	content: "";
+	display: inline-block;
+    font-family: "MWF-MDL2";
+    font-size: .6em;
+	margin-right: .25rem;
+	transform: rotate(180deg);
+}

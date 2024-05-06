@@ -1,0 +1,25 @@
+(function(window, $) {
+	window.setTimeout(function() {
+		$( '.timeline-express' ).each(
+			function() {
+				$( this ).addClass( 'full-rendered' );
+			}
+		);
+	}, 10000 );
+
+	$(window).on( 'layoutComplete', function() {
+		$( '.timeline-express' ).each(
+			function() {
+				var overlaps = $( this ).find( '.cd-timeline-block' ).overlaps();
+
+				if ( overlaps.length >= 1 ) {
+					timelineExpress.display( $( this ) );
+				}
+
+				if ( overlaps.length < 1 ) {
+					$( this ).addClass( 'full-rendered' );
+				}
+			}
+		);
+	});
+})( window, jQuery );
