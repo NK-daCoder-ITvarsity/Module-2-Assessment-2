@@ -1,0 +1,31 @@
+.decorator-edgars {
+    background-image: linear-gradient(-175deg, red, hsl(0, 100%, 14%));
+    padding: 1.5em;
+}
+
+.edgars-logo-style {
+    font-size: 2em;
+}
+
+.edgars-logo-section {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 900px) {
+    .edgars-logo-section {
+        flex-direction: row;
+        gap: .5em;
+    }
+
+    .edgars-logo-style {
+        font-size: 5em;
+    }
+
+    .decorator-edgars {
+        padding: 2em;
+    }
+}
+
+
+
