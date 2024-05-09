@@ -184,5 +184,15 @@
     color: white;
 }
 
+/* =============================== Top Navigation ======================================== */
 
+.secondary-navigation {
+    position: fixed;
+    top: 6em;
+    right: 1em;
+    border-radius: var(--border-radius);
+    padding: 1em;
+    height: 35%;
+    width: 75%;
+}
 

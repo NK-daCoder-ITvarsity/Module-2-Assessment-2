@@ -1,0 +1,76 @@
+.movie-section {
+    margin-top: 5.5em;
+}
+
+.movie-section, .second-movie {
+    padding: .55em;
+}
+
+@media (min-width: 900px) {
+    .movie-section, .second-movie {
+        width: 78%;
+        margin-inline: auto;
+        position: relative;
+        left: 3em;
+    }
+
+    .second-movie {
+        margin-top: 2em;
+    }
+
+    
+
+    .movie-section, .second-movie {
+        width: 78%;
+    }
+
+}
+
+.divider-sterkinekor-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+.movies-unordered-list, .second-movies-unordered-list {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    overflow: auto;
+    box-shadow: inset 1px 1px 3px 2px black, inset -2px -2px 1px 0 hsla(0, 0%, 100%, 0.315);
+    padding: .8em;
+    border-radius: 10px;
+}
+
+.second-movies-unordered-list > li, .second-movies-unordered-list > li a,
+.movies-unordered-list > li, .movies-unordered-list > li a {
+    flex: 0 0 auto;
+}
+
+.movies-unordered-list > li, .movies-unordered-list > li a {
+    width: 390px;
+}
+
+.second-movies-unordered-list > li, .second-movies-unordered-list > li a {
+    width: 165px;
+}
+
+@media (min-width: 900px) {
+    .movies-unordered-list > li, .movies-unordered-list > li a {
+        width: 700px;
+    }
+}
+
+.heading {
+    margin-top: .7em;
+    margin-bottom: .7em;
+}
+
+.movie-images {
+    border-radius: 20px;
+}
+
+.space {
+    padding-bottom: 6em;
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pine City Mall | SK Cinema</title>
+    <!-- Universal Stylesheet -->
+    <link rel="stylesheet" href="/assets/universal-stylesheet/desktop-navigation.css">
+    <link rel="stylesheet" href="/assets/universal-stylesheet/mobile-navigation.css">
+    <link rel="stylesheet" href="/assets/universal-stylesheet/util.css">
+
+    <link rel="stylesheet" href="./movie-styles.css">
+</head>
+<body>
+    <header class="header--fixed-position">
+        <nav class="navigation twenty-px-border-top-right-left-radius">
+            <ul class="unordered-list--bullet-remover unorderlist_list_anchor--underline-removed navigation__unordered-list">
+                <li class="navigation-unordered__items"><a href="../../../index.html" class="link">
+                    <img src="/assets/icons/home-icon/home-active.svg" class="navigation__image" alt="" aria-label="home link">
+                </a></li>
+                <li class="navigation-unordered__items"><a href="#" class="link">
+                    <img src="/assets/icons/home-icon/about-us-inactive.svg" class="navigation__image" alt="" aria-label="about us link">
+                </a></li>
+                <li class="navigation-unordered__items"><a href="#" class="link">
+                    <img src="/assets/icons/home-icon/contact-us-inactive.svg" class="navigation__image" alt="" aria-label="contact us link">
+                </a></li>
+                <li class="navigation-unordered__items"><a href="/assets/webpages/map/map.html" class="link">
+                    <img src="/assets/icons/home-icon/Map-inactive.svg" class="navigation__image" alt="" aria-label="Mall Map link">
+                </a></li>
+                <!-- 
+                <li><a href="#">Stores</a></li>
+                <li><a href="#">Cinema</a></li>
+                -->
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+
+        <section class="second-navigation--decoration second-navigation">
+            <!-- My Logo -->
+            <img src="" alt="" aria-label="Pine City Mall Logo" class="top-section__logo">
+
+            <section class="searchbar--center">
+                <input type="text" class="section-top__searchbar" placeholder="Search..."/>
+            </section>
+
+            <button id="dropdown-button" class="section-top__button text-color--white" aria-haspopup="true" aria-expanded="false" class="section-top__button text-color--white">:</button>
+
+            <nav class="secondary-navigation" id="dropdown-menu" aria-labelledby="dropdown-button" hidden>
+                <ul class="unorderlist_list_anchor--underline-removed unordered-list--bullet-remover">
+                    <li><a href="./assets/webpages/movie-place/movie-place.html" class="text-color--white">>> Explore Our Cinema</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <section class="movie-section text-color--white">
+            <div role="banner" class="divider-sterkinekor-logo">
+                <img src="../../website-logos/sterkinekor-logo.webp" alt="" aria-label="sk movie" class="sterkinekor-logo">
+            </div>
+            <h3 class="heading">Trending Movies</h3>
+
+            <ul class="movies-unordered-list unordered-list--bullet-remover unorderlist_list_anchor--underline-removed">
+                <li>
+                    <a href="./websites/godzilla-vs-kong.html">
+                        <img src="./images/godzilla-vs-kong.jpg" class="image--is-repsonsive movie-images">
+                    </a>
+                </li>
+                <li>
+                    <a href="./websites/kungfu-panda.html">
+                        <img src="./images/kung-fu-panda.jpg" class="image--is-repsonsive movie-images">
+                    </a>
+                </li>
+                <li>
+                    <a href="./websites/the-beekeeper.html">
+                        <img src="./images/beekeeper.jpg" class="image--is-repsonsive movie-images">
+                    </a>
+                </li>
+                <li>
+                    <a href="./websites/abigail.html">
+                        <img src="./images/abigal.jpg" class="image--is-repsonsive movie-images">
+                    </a>
+                </li>
+                <li>
+                    <a href="./websites/ghostbusters.html">
+                        <img src="./images/ghostbusters.jpg" class="image--is-repsonsive movie-images">
+                    </a>
+                </li>
+                <li>
+                    <a href="./websites/aurther-the-king.html">
+                        <img src="./images/arthur-the-king.jpg" class="image--is-repsonsive movie-images">
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="second-movie text-color--white">
+            <h3 class="heading">Top Rated Movies</h3>
+            <ul class="second-movies-unordered-list unordered-list--bullet-remover unorderlist_list_anchor--underline-removed">
+                <li>
+                    <a href="./websites/dune.html">
+                        <img src="./images/dune.jpg" class="image--is-repsonsive movie-images">
+                    </a>
+                </li>
+                <li>
+                    <a href="./websites/sleeping-dog.html">
+                        <img src="./images/sleeping-dogs.jpg" class="image--is-repsonsive movie-images">
+                    </a>
+                </li>
+                <li>
+                    <a href="./websites/the-garfield-movie.html">
+                        <img src="./images/garfield.jpg" class="image--is-repsonsive movie-images">
+                    </a>
+                </li>
+                <li>
+                    <a href="./websites/despicable-me.html">
+                        <img src="./images/despicableMe4.jpg" class="image--is-repsonsive movie-images">
+                    </a>
+                </li>
+                <li>
+                    <a href="./websites/inside-out.html">
+                        <img src="./images/inside-out-2.jpg" class="image--is-repsonsive movie-images">
+                    </a>
+                </li>
+                <li>
+                    <a href="./websites/deadpool-vs-wolf.html">
+                        <img src="./images/deadpool and wolverin.jpg" class="image--is-repsonsive movie-images">
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <div class="space"></div>
+    </main>
+
+    <script src="../../../app.js"></script>
+    
+</body>
+</html>

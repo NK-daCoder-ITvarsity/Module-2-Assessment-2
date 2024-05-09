@@ -40,7 +40,7 @@
 
         <main class="main">
 
-            <nav class="second-navigation--decoration second-navigation">
+            <section class="second-navigation--decoration second-navigation">
                 <!-- My Logo -->
                 <img src="" alt="" aria-label="Pine City Mall Logo" class="top-section__logo">
     
@@ -48,8 +48,14 @@
                     <input type="text" class="section-top__searchbar" placeholder="Search..."/>
                 </section>
     
-                <button class="section-top__button text-color--white">:</button>
-            </nav>
+                <button id="dropdown-button" class="section-top__button text-color--white" aria-haspopup="true" aria-expanded="false" class="section-top__button text-color--white">:</button>
+
+                <nav class="secondary-navigation" id="dropdown-menu" aria-labelledby="dropdown-button" hidden>
+                    <ul class="unorderlist_list_anchor--underline-removed unordered-list--bullet-remover">
+                        <li><a href="./assets/webpages/movie-place/movie-place.html" class="text-color--white">>> Explore Our Cinema</a></li>
+                    </ul>
+                </nav>
+            </section>
         
             <ul class="first-section__unordered-list">
                 <li>
@@ -89,19 +95,19 @@
                         </a>
                     </li>
                     <li class="mall-catalogue-list__item mall-catalogue-list-item--glassmorphisum">
-                        <a href="#" class="flex--column-center-x-y text-color--white">
+                        <a href="/assets/webpages/grocery/grocery.html" class="flex--column-center-x-y text-color--white">
                             <img src="/assets/webpages/index-assets/icons/grocery-stores.svg" class="desktop-scale image--is-repsonsive">
                             <h3 class="font--medium-title-size">Grocery</h3>
                         </a>
                     </li>
                     <li class="mall-catalogue-list__item mall-catalogue-list-item--glassmorphisum">
-                        <a href="#" class="flex--column-center-x-y text-color--white">
+                        <a href="./assets/webpages/music/music.html" class="flex--column-center-x-y text-color--white">
                             <img src="/assets/webpages/index-assets/icons/music-store.svg" class="desktop-scale image--is-repsonsive">
                             <h3 class="font--medium-title-size">Music</h3>
                         </a>
                     </li>
                     <li class="mall-catalogue-list__item mall-catalogue-list-item--glassmorphisum">
-                        <a href="#" class="flex--column-center-x-y text-color--white">
+                        <a href="./assets/webpages/banks/banks.html" class="flex--column-center-x-y text-color--white">
                             <img src="/assets/webpages/index-assets/icons/bank-icon.svg" class="desktop-scale image--is-repsonsive">
                             <h3 class="font--medium-title-size">Banks</h3>
                         </a>
@@ -109,5 +115,7 @@
                 </ul>
             </section>
         </main>
+
+        <script src="/app.js"></script>
     </body>
 </html>
