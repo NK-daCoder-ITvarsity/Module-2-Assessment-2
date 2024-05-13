@@ -1,3 +1,7 @@
+.main {
+    padding-bottom: 7em;
+}
+
 .movie-section {
     margin-top: 5.5em;
 }
@@ -33,7 +37,7 @@
     margin-bottom: 2em;
 }
 
-.movies-unordered-list, .second-movies-unordered-list {
+.movies-unordered-list {
     display: flex;
     flex-direction: row;
     gap: 1em;
@@ -41,6 +45,12 @@
     box-shadow: inset 1px 1px 3px 2px black, inset -2px -2px 1px 0 hsla(0, 0%, 100%, 0.315);
     padding: .8em;
     border-radius: 10px;
+}
+
+.second-movies-unordered-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: .4em;
 }
 
 .second-movies-unordered-list > li, .second-movies-unordered-list > li a,
@@ -63,8 +73,8 @@
 }
 
 .heading {
-    margin-top: .7em;
-    margin-bottom: .7em;
+    margin-top: .8em;
+    margin-bottom: 1em;
 }
 
 .movie-images {
@@ -74,3 +84,62 @@
 .space {
     padding-bottom: 6em;
 }
+
+/* ================= Movie websites ============================== */
+
+.hero {
+    margin-top: 5em;
+}
+
+.hero, .movie-cast, .age-bracket-cast, 
+.showing-times, .movie-synopsis {
+    padding: 1em;
+}
+
+.movie-cast {
+    box-shadow: inset 1px 1px 4px 1px black, inset -1px -1px 2px 0 hsla(0, 0%, 100%, 0.301);
+    margin-bottom: 2em;
+    margin-top: 2em;
+    border-radius: 20px;
+}
+
+.poster-border {
+    border-radius: 10px;
+}
+
+.cast-section__heading, .synopsis-section__heading {
+    margin-bottom: .5em;
+}
+
+.cast__profile-photo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.cast__unordered-list {
+    padding-top: .5em;
+    padding-bottom: .5em;
+    display: flex;
+    gap: 2em;
+    overflow: auto;
+}
+
+.cast-unordered__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 900px) {
+    .hero, .movie-cast, 
+    .age-bracket-cast, .showing-times, 
+    .movie-synopsis {
+        width: 78%;
+        margin-inline: auto;
+        position: relative;
+        left: 3em;
+    }
+}
+
+

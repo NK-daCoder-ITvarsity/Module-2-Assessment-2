@@ -66,6 +66,10 @@ body {
 /* ========================================= Grids ======================================================= */
 
 /* ================== Two Column Grid ============================= */
+.two-col-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
 
 .two-one--column-grid {
     display: grid;

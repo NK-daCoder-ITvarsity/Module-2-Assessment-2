@@ -120,6 +120,10 @@
     box-shadow: -3px -3px 5px 1px hsla(0, 0%, 31%, 0.281), 3px 3px 5px 1px hsl(0, 0%, 0%);
 }
 
+.section-top__button:active, .section-top__button:focus {
+    box-shadow: inset -3px -3px 5px 1px hsla(0, 0%, 31%, 0.281), inset 3px 3px 5px 1px hsl(0, 0%, 0%);
+}
+
 .top-section__logo {
     border: 1px solid blue;
     padding: 1em;

@@ -1,8 +1,9 @@
+// Just trying javascript out
+
 'strict'
 
 // Getting dropdown menu
 let dropdownButton = document.getElementById("dropdown-button");
-
 let dropdownMenu = document.getElementById("dropdown-menu");
 
 

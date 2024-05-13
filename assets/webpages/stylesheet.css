@@ -140,8 +140,8 @@
 }
 
 .about-spur__image {
-    width: 275px;
-    height: 250px;
+    width: 235px;
+    height: 225px;
     border-radius: 50%;
     box-shadow: 0 0 5px 2px hsla(0, 0%, 100%, 0.644);
 }
@@ -244,3 +244,4 @@
     margin: 0 auto;
     padding-bottom: 10em;
 }
+

@@ -19,10 +19,10 @@
                     <li class="navigation-unordered__items"><a href="/index.html" class="link">
                         <img src="/assets/icons/home-icon/home-active.svg" class="navigation__image" alt="" aria-label="home link">
                     </a></li>
-                    <li class="navigation-unordered__items"><a href="#" class="link">
+                    <li class="navigation-unordered__items"><a href="/about-us.html" class="link">
                         <img src="/assets/icons/home-icon/about-us-inactive.svg" class="navigation__image" alt="" aria-label="about us link">
                     </a></li>
-                    <li class="navigation-unordered__items"><a href="#" class="link">
+                    <li class="navigation-unordered__items"><a href="/contact-us.html" class="link">
                         <img src="/assets/icons/home-icon/contact-us-inactive.svg" class="navigation__image" alt="" aria-label="contact us link">
                     </a></li>
                     <li class="navigation-unordered__items"><a href="/assets/webpages/map/map.html" class="link">
@@ -38,16 +38,22 @@
 
         <main class="main-resturant">
             <!-- Top Navigation section -->
-            <nav class="second-navigation--decoration second-navigation">
+            <section class="second-navigation--decoration second-navigation">
                 <!-- My Logo -->
                 <img src="" alt="" aria-label="Pine City Mall Logo" class="top-section__logo">
-
+    
                 <section class="searchbar--center">
                     <input type="text" class="section-top__searchbar" placeholder="Search..."/>
                 </section>
-
-                <button class="section-top__button text-color--white">:</button>
-            </nav>
+    
+                <button id="dropdown-button" class="section-top__button text-color--white" aria-haspopup="true" aria-expanded="false" class="section-top__button text-color--white">:</button>
+    
+                <nav class="secondary-navigation" id="dropdown-menu" aria-labelledby="dropdown-button" hidden>
+                    <ul class="unorderlist_list_anchor--underline-removed unordered-list--bullet-remover">
+                        <li><a href="/assets/webpages/movie-place/movie-place.html" class="text-color--white">>> Explore Our Cinema</a></li>
+                    </ul>
+                </nav>
+            </section>
 
             <section class="main-resturant__first-section text-color--white">
                 <div class="divider-decorator--1">
@@ -82,5 +88,6 @@
                 </ul>
             </section>
         </main>
+        <script src="../../../app.js"></script>
     </body>
 </html>

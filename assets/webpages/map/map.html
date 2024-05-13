@@ -16,13 +16,13 @@
                 <li class="navigation-unordered__items"><a href="/index.html" class="link">
                     <img src="/assets/icons/home-icon/home-active.svg" class="navigation__image" alt="" aria-label="home link">
                 </a></li>
-                <li class="navigation-unordered__items"><a href="#" class="link">
+                <li class="navigation-unordered__items"><a href="/about-us.html" class="link">
                     <img src="/assets/icons/home-icon/about-us-inactive.svg" class="navigation__image" alt="" aria-label="about us link">
                 </a></li>
-                <li class="navigation-unordered__items"><a href="#" class="link">
+                <li class="navigation-unordered__items"><a href="/contact-us.html" class="link">
                     <img src="/assets/icons/home-icon/contact-us-inactive.svg" class="navigation__image" alt="" aria-label="contact us link">
                 </a></li>
-                <li class="navigation-unordered__items"><a href="/assets/webpages/map/map.html" class="link-pressed">
+                <li class="navigation-unordered__items"><a href="/assets/webpages/map/map.html" class="link">
                     <img src="/assets/icons/home-icon/Map-inactive.svg" class="navigation__image" alt="" aria-label="Mall Map link">
                 </a></li>
                 <!-- 
@@ -41,11 +41,19 @@
             <input type="text" class="section-top__searchbar" placeholder="Search..."/>
         </section>
 
-        <button class="section-top__button text-color--white">:</button>
+        <button id="dropdown-button" class="section-top__button text-color--white" aria-haspopup="true" aria-expanded="false" class="section-top__button text-color--white">:</button>
+
+        <nav class="secondary-navigation" id="dropdown-menu" aria-labelledby="dropdown-button" hidden>
+            <ul class="unorderlist_list_anchor--underline-removed unordered-list--bullet-remover">
+                <li><a href="/assets/webpages/movie-place/movie-place.html" class="text-color--white">>> Explore Our Cinema</a></li>
+            </ul>
+        </nav>
     </section>
+
     <main class="main-map">
         <img src="/assets/webpages/map/Mall-Map-Jan-2024-scaled.jpg" alt="" aria-label="mall map">
     </main>
-    
+
+    <script src="../../../app.js"></script>
 </body>
 </html>
