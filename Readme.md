@@ -33,3 +33,7 @@
 </p>
 
 <h2 id="contribution">Contributions</h2>
+<p>
+    Contributions are accepted, be sure to submit any contributions in a sepearte branch from the main,
+    and contact the original owner for merges.
+</p>

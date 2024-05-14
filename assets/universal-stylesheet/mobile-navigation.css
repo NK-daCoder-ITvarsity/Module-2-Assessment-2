@@ -70,7 +70,7 @@
                 4px 4px 4px 2px hsl(0, 0%, 0%);
 }
 
-.link-pressed {
+.link-pressed, .Link-pressed:focus {
     border-radius: var(--neumorphic-button-border-radius);
     display: inline-block;
     padding: var(--neumorphic-button-padding);
