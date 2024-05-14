@@ -125,7 +125,9 @@
 }
 
 .top-section__logo {
-    border: 1px solid blue;
+    background-image: linear-gradient(hsl(192, 100%, 50%), hsl(241, 100%, 50%));
+    border-radius: 25%;
+
     padding: 1em;
 }
 
