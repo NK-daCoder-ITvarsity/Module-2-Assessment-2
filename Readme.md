@@ -10,6 +10,7 @@
     <li><a href="#technologies-used">Technologies used...</a></li>
     <li><a href="#licensing">Licensing</a></li>
     <li><a href="#contribution">Contributions...</a></li>
+    <li><a href="#compatability">Compatability...</li>
 </ul>
 
 <h2 id="getting-started">Getting Started</h2>
@@ -26,6 +27,9 @@
     <li>Html5</li>
     <li>CSS3</li>
 </ul>
+
+<h2 id="#compatability">Compatability</h2>
+<p>The WebApp is Compatable with Most Devices.</p>
 
 <h2 id="licensing">Licensing</h2>
 <p>
